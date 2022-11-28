@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GD News</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     <div id="container-pai">
 
         <div id="navbar">
             <img id="img-lista" src="src/img/icons8-cardápio-50.png" alt="imagem lista">
+            <div class="separador">
+                <input type="text" name="Pesquisar" id="pesquisar" placeholder="Pesquisar notícia">
+                <img id="img-user" src="src/img/user.png" alt="imagem usuário">
+            </div>
         </div>
         
+
+
         <div id="principais-noticias">
             
             <div id="coluna-esquerda">
-                <div id="card-noticia-principal"></div>
-
+                <div id="card-noticia-principal">  </div>
+                
             </div>
             
             <div id="coluna-direita">

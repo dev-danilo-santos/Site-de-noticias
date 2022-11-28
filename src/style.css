@@ -24,10 +24,26 @@ body {
     align-items: center;
 }
 
-#img-lista {
+.separador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.separador input {
+    width: 25%;
+}
+
+#img-lista ,#img-user {
     width: 20px;
     height: auto;
     transition: 0.9s;
+}
+#img-lista {
+    margin-right: 10%;
+}
+#img-user {
+    margin-right: 5%;
 }
 
 #principais-noticias {
@@ -45,3 +61,9 @@ body {
     height: 500px;
 }
 
+@media screen and (max-width: 540px) {
+    .separador input {
+        width: 111px;
+        margin-left: 10px;
+    }
+}
