@@ -22,7 +22,7 @@ function saidaMouse(){
 }   
 function criarNoticias(){   
     let listaNoticia = [];
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 5; i++) {
         var noticia = new Object();
         noticia.titulo = `Titulo da noticia ${i}`
         noticia.autor = `Autor da noticia ${i}`
@@ -34,14 +34,20 @@ function criarNoticias(){
 
 function renderizarNoticias(){
     let list = criarNoticias();
-    for(let i = 1; i<=list.length; i++){
-        let html = `<div class="card">
-        <img src="https://picsum.photos/200/200" alt="imagem noticia">
-        <h4>Título Notícia ${i} </h4>
-        </div>`;
-    let div = document.createElement('div');
-    div.innerHTML = html;
-    document.getElementById('coluna-esquerda').appendChild(div);
+    for(let i = 0; i<list.length; i++){
+    let tituloNoticia = document.createElement('h3');
+    let autorNoticia = document.createElement('p')
+    let textoNoticia = document.createElement('p')
+    
+    tituloNoticia.innerHTML = list[i].titulo;
+    tituloNoticia.className = 'titulo-noticia';
+    autorNoticia.innerHTML = list[i].autor;
+    autorNoticia.className = 'autor-noticia';
+    textoNoticia.innerHTML = list[i].texto;
+    textoNoticia.className = 'texto-noticia';
+
+    
+    document.getElementById('coluna-esquerda').appendChild(tituloNoticia);
 
     }
 
