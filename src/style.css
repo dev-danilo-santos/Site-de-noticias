@@ -1,6 +1,8 @@
 body * {
     transition: 0.5s;
     border-radius: 5px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 body {
     width: 100%;
@@ -10,11 +12,11 @@ body {
 
 #navbar {
     width: 100%;
-    height: 40px;
+    height: 35px;
     background-color: rgba(196, 195, 195,0.5);
     margin: 0;
     padding: 10px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 8px 8px;
     position: sticky;
     top:0;
     left:0;
@@ -33,6 +35,8 @@ body {
 }
 .separador input {
     width: 25%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #img-lista ,#img-user {
@@ -55,15 +59,19 @@ body {
 
 #coluna-esquerda {
     width: 70%;
-    height: 500px;
+    height: auto;
     background-color: rgba(196, 195, 195,0.5);
     margin: 5px 5px 5px 5px;
 }
 #coluna-direita {
     width: 30%;
-    height: 500px;
+    height: auto;
     background-color: rgba(196, 195, 195,0.5);
     margin: 5px 5px 5px 0px;
+}
+
+#coluna-direita, #coluna-esquerda {
+    padding: 10px;
 }
 
 @media screen and (max-width: 540px) {
