@@ -19,8 +19,8 @@ function saidaMouse(){
     imgList.style.filter = "none";
     imgUser.style.filter = "none";
     inputSearch.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
-}   
-function criarNoticias(){   
+}
+function criarNoticias(){
     let listaNoticia = [];
     for (let i = 1; i <= 5; i++) {
         var noticia = new Object();
@@ -49,6 +49,6 @@ function renderizarNoticias(){
     
     document.getElementById('coluna-esquerda').appendChild(tituloNoticia);
 
-    }
+}
 
 }
