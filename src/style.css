@@ -56,15 +56,26 @@ body {
     display: flex;
     flex-direction: row;
 }
-
-#coluna-esquerda {
+#grupo-col-esq {
     width: 70%;
+    margin: 5px 5px 5px 5px;
+}
+
+#coluna-esquerda, #coluna-esquerda-sec {
+    width: 100%;
     height: auto;
     background-color: rgba(196, 195, 195,0.5);
     margin: 5px 5px 5px 5px;
 }
-#coluna-esquerda {
+#coluna-esquerda , #coluna-sec{
     display: flex;
+}
+
+#grupo-col-dir {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 5px 5px 5px 5px;
 }
 
 #noticia-principal-dia {
@@ -72,11 +83,11 @@ body {
 
 }
 
-#coluna-direita {
-    width: 30%;
+#coluna-direita, #coluna-direita2 , #coluna-direita3{
+    width: 100%;
     height: auto;
     background-color: rgba(196, 195, 195,0.5);
-    margin: 5px 5px 5px 0px;
+    margin: 5px 5px 5px 5px;
 }
 
 #coluna-direita, #coluna-esquerda {
