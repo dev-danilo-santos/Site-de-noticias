@@ -20,9 +20,9 @@ function saidaMouse(){
     imgUser.style.filter = "none";
     inputSearch.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
 }
-function criarNoticias(){
+function criarNoticias(quantidade){
     let listaNoticia = [];
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= quantidade; i++) {
         var noticia = new Object();
         noticia.titulo = `Titulo da noticia ${i}`
         noticia.autor = `Autor da noticia ${i}`
@@ -31,23 +31,39 @@ function criarNoticias(){
     }
     return listaNoticia;
 }
+let listaDeNoticias = criarNoticias(10);
 
 function renderizarNoticias(){
-    let list = criarNoticias();
-    for(let i = 0; i<list.length; i++){
+    for(let i = 0; i<listaDeNoticias.length; i++){
     let tituloNoticia = document.createElement('h3');
     let autorNoticia = document.createElement('p')
     let textoNoticia = document.createElement('p')
     
-    tituloNoticia.innerHTML = list[i].titulo;
+    tituloNoticia.innerHTML = listaDeNoticias[i].titulo;
     tituloNoticia.className = 'titulo-noticia';
-    autorNoticia.innerHTML = list[i].autor;
+    autorNoticia.innerHTML = listaDeNoticias[i].autor;
     autorNoticia.className = 'autor-noticia';
-    textoNoticia.innerHTML = list[i].texto;
+    textoNoticia.innerHTML = listaDeNoticias[i].texto;
     textoNoticia.className = 'texto-noticia';
-
     
-    document.getElementById('coluna-esquerda').appendChild(tituloNoticia);
+    if(i == 0) {
+        document.getElementById('noticia-principal-dia').appendChild(tituloNoticia);
+        document.getElementById('noticia-principal-dia').appendChild(autorNoticia);
+        document.getElementById('noticia-principal-dia').appendChild(textoNoticia);
+    } else if(i == 1) {
+        document.getElementById('primeira-noticia').appendChild(tituloNoticia);
+        document.getElementById('primeira-noticia').appendChild(autorNoticia);
+        document.getElementById('primeira-noticia').appendChild(textoNoticia);
+    } else if(i == 2) {
+        document.getElementById('segunda-noticia').appendChild(tituloNoticia);
+        document.getElementById('segunda-noticia').appendChild(autorNoticia);
+        document.getElementById('segunda-noticia').appendChild(textoNoticia);
+    }
+    else {
+        document.getElementById('coluna-direita').appendChild(tituloNoticia);
+        document.getElementById('coluna-direita').appendChild(autorNoticia);
+        document.getElementById('coluna-direita').appendChild(textoNoticia);
+    }
 
 }
 

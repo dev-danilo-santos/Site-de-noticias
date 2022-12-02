@@ -63,6 +63,15 @@ body {
     background-color: rgba(196, 195, 195,0.5);
     margin: 5px 5px 5px 5px;
 }
+#coluna-esquerda {
+    display: flex;
+}
+
+#noticia-principal-dia {
+    width: 50%;
+
+}
+
 #coluna-direita {
     width: 30%;
     height: auto;
