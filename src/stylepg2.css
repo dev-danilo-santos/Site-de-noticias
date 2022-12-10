@@ -1,0 +1,12 @@
+body * {
+
+}
+body {
+    width: 100%;
+    display: flex;
+    
+}
+
+#noticias-resultados {
+    width: 70%;
+}

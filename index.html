@@ -9,18 +9,17 @@
  
 </head>
 
-<body onload="renderizarNoticias()">
+<body>
     <div id="container-pai">
 
         <div id="navbar">
             <img id="img-lista" src="src/img/icons8-cardápio-50.png" alt="imagem lista">
             <div class="separador">
-                <input type="text" name="Pesquisar" id="pesquisar" placeholder="Pesquisar notícia">
+                <input type="text" name="Pesquisar" id="pesquisar" placeholder="Pesquisar notícia" onkeypress="buscar(event)">
                 <img id="img-user" src="src/img/user.png" alt="imagem usuário">
+                
             </div>
         </div>
-        
-
 
         <div id="principais-noticias">
             <div id="grupo-col-esq">
@@ -28,33 +27,133 @@
                 <div id="coluna-esquerda">
                     
                     <div id="noticia-principal-dia">
+                        <a href=""><h3>Guerra “vai demorar” e risco nuclear aumenta, diz Putin</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam!</p>
+                        </a>
                         
                     </div>
                     
-                    <div id="containerW-noticias-secundarias">
+                    <div id="container-noticias-secundarias">
                         <div id="primeira-noticia">
-                            
+                            <a href="">
+                                <img src="src/img/noticias/goljapao.png" alt="Imagem gol do Japão na copa do mundo">
+                                <div id="card">
+                                    <p>Polêmica, a ilusão de ótica que causou confusão no gol do Japão pela copa do mundo</p>
+                                </div>
+                                
+                            </a>
+
                         </div>
-                        <div id="segunda-noticia"></div>
-                        
+                        <div id="segunda-noticia">
+                            <a href="">
+                                <img src="src/img/noticias/covid.jpg" alt="Imagem gol do Japão na copa do mundo">
+                                <div id="card">
+                                    <p>Alagoas confirma 383 casos de Covid nas últimas 24 horas</p>
+                                </div>  
+                            </a>
+
+                        </div>
                     </div>
                     
                 </div>
                 <div id="coluna-esquerda-sec">
-
+                    
+                    <a href="" id="cards">
+                        <img src="src/img/noticias/espanhaeliminada.png" alt="Imagem gol do Japão na copa do mundo">
+                        <div id="card">
+                            <p>Goleiro do Sevilla brilha nos pênaltis e Marrocos elimina Espanha</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    <a href="" id="cards">
+                        <img src="src/img/noticias/neymar.jpeg" alt="Imagem gol do Japão na copa do mundo">
+                        <div id="card">
+                            <p>Neymar volta de lesão e é eleito melhor do jogo contra a Coreia do Sul</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    <a href="" id="cards">
+                        <img src="src/img/noticias/goljapao.png" alt="Imagem gol do Japão na copa do mundo">
+                        <div id="card">
+                            <p>Polêmica, a ilusão de ótica que causou confusão no gol do Japão pela copa do mundo
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    
+                    <a href="" id="cards">
+                        <img src="src/img/noticias/goljapao.png" alt="Imagem gol do Japão na copa do mundo">
+                        <div id="card">
+                            <p>Polêmica, a ilusão de ótica que causou confusão no gol do Japão pela copa do mundo
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    <a href="" id="cards">
+                        <img src="src/img/noticias/goljapao.png" alt="Imagem gol do Japão na copa do mundo">
+                        <div id="card">
+                            <p>Polêmica, a ilusão de ótica que causou confusão no gol do Japão pela copa do mundo
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        
+                    </a>
+                    <hr>
                 </div>
             </div>
 
 
             <div id="grupo-col-dir">
                 <div id="coluna-direita">
+                    <h3>Copa do mundo</h3>
+                    <br>
+                    <a href=""><p>Polêmica, a ilusão de ótica que causou confusão no gol do Japão pela copa do mundo</p></a>
+                    <br>
                     
+                    <a href=""><p>Exames apontam lesões, e Gabriel Jesus e Alex Telles estão fora da Copa do Mundo</p></a>
+                    <br>
+                    
+                    <a href=""><p>Neymar volta de lesão e é eleito melhor do jogo contra a Coreia do Sul</p></a>
+                    <br>
+
+                    <a href=""><p>Goleiro do Sevilla brilha nos pênaltis e Marrocos elimina Espanha</p></a>
+                    <br>
+
                 </div>
                 <div id="coluna-direita2">
+                    <h3>Saúde</h3>
+                    <br>
+                    <a href=""><p>Alagoas confirma 383 casos de Covid nas últimas 24 horas</p></a>
+                    <br>
                     
+                    <a href=""><p>Covid: as duras regras de controle suspensas pela China após protestos</p></a>
+                    <br>
+                    
+                    <a href=""><p>Os jovens que ainda usam máscara por vergonha de mostrar o rosto: 'Sou feio, mãe'</p></a>
+                    <br>
+
+                    <a href=""><p>Gripe aviária: há risco para humanos após surto que matou 50 milhões de aves nos EUA?</p></a>
+                    <br>
                 </div>
                 <div id="coluna-direita3">
+                    <h3>Internacional</h3>
+                    <br>
+                    <a href=""><p>Quem são os 'cidadãos do reich', extremistas de direita acusados de tramar golpe na Alemanha</p></a>
+                    <br>
                     
+                    <a href=""><p>3 pontos para entender caos político que causou queda e prisão de Castillo no Peru</p></a>
+                    <br>
+                    
+                    <a href=""><p>Risco de guerra nuclear está aumentando, mas não somos loucos, diz Putin</p></a>
+                    <br>
+
+                    <a href=""><p>Como cidades brasileiras aparecem em ranking de lugares mais caros do mundo</p></a>
+                    <br>
                 </div>
             </div>
                 
