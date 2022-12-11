@@ -266,9 +266,17 @@ body {
 #grupo-col-dir {
     overflow: hidden;
 }
-#coluna-direita:hover text {
-    color: black;
+a:hover p {
+    color: rgb(198, 255, 196);
 }
+#noticia-principal-dia:hover h3{
+    color: rgb(198, 255, 196);
+}
+
+#card:hover h3{
+    color: rgb(198, 255, 196);
+}
+
 
 #coluna-direita, #coluna-direita2 , #coluna-direita3{
     width: 100%;
