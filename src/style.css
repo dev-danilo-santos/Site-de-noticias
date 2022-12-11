@@ -145,6 +145,7 @@ body {
     justify-content: space-between;
 }
 .separador input {
+    color: black;
     width: 25%;
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
