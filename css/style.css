@@ -88,7 +88,7 @@ input:focus {
     outline: none;
 }
 
-#forms-login {
+#form-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,6 +180,9 @@ input:focus {
     align-items: center;
     position: relative;
 }
+#blocoCompletoLive iframe {
+    width: 99%;
+}
 
 .bloco-ao-vivo img {
     width: 200px;
@@ -192,7 +195,7 @@ input:focus {
     align-items: center;
     flex-direction: column;
     font-size: 16px;
-    width: 60%;
+    width: 80%;
     max-width: 100%;
     padding: 20px;
     background-color: #f0f0f0;
@@ -204,6 +207,14 @@ input:focus {
 .programacaoAoVivo {
     font-size: 18px;
 }
+@media screen and (max-width: 530px) {
+    .linhaRodape ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
 
 @media screen and (max-width: 450px) {
     .blocoPrincipal {
@@ -212,4 +223,17 @@ input:focus {
     .blocoPrincipal input {
         width: 90%;
     }
+    .linhaRodape ul{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .linhaRodape li {
+        margin: 5px;
+        padding: 5px;
+    }
+    .blocoRodape {
+        width: 100%;
+    }
+
+
 }
