@@ -56,6 +56,19 @@ a {
     color: rgb(240, 240, 240);
     font-size: 20px;
 }
+
+.submittt input {
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #d71e1f;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+}
+
 #btn-cadastrar {
     background-color: #d71e1f;
     width: 150px;
@@ -180,6 +193,7 @@ input:focus {
     align-items: center;
     position: relative;
 }
+
 #blocoCompletoLive iframe {
     width: 99%;
 }
@@ -201,12 +215,13 @@ input:focus {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .programacaoAoVivo {
     font-size: 18px;
 }
+
 @media screen and (max-width: 530px) {
     .linhaRodape ul {
         display: flex;
@@ -220,20 +235,22 @@ input:focus {
     .blocoPrincipal {
         width: 70%;
     }
+
     .blocoPrincipal input {
         width: 90%;
     }
-    .linhaRodape ul{
+
+    .linhaRodape ul {
         flex-direction: column;
         justify-content: flex-start;
     }
+
     .linhaRodape li {
         margin: 5px;
         padding: 5px;
     }
+
     .blocoRodape {
         width: 100%;
     }
-
-
 }
