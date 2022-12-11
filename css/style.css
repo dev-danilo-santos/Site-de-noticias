@@ -56,6 +56,17 @@ a {
     color: rgb(240, 240, 240);
     font-size: 20px;
 }
+#btn-cadastrar {
+    background-color: #d71e1f;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 20px;
+}
 
 .nomeUsuario input {
     border-radius: 25px;
