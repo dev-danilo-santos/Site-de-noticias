@@ -1,0 +1,204 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*Telas de Login e Cadastro*/
+#login {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #d71e1f;
+}
+
+.email input {
+    border-radius: 25px;
+    padding-left: 20px;
+    border: none;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 15px;
+    background-color: rgb(252, 252, 252);
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
+
+.password input {
+    border-radius: 25px;
+    padding-left: 20px;
+    border: none;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 15px;
+    background-color: rgb(252, 252, 252);
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
+
+.submit input {
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #d71e1f;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 20px;
+}
+
+.nomeUsuario input {
+    border-radius: 25px;
+    padding-left: 20px;
+    border: none;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 15px;
+    background-color: rgb(252, 252, 252);
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input:focus {
+    outline: none;
+}
+
+#form-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocoPrincipal {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    width: 90%;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.blocoPrincipal img {
+    width: 200px;
+}
+
+.linhaRodape ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#footer {
+    background-color: #ddd;
+    position: relative;
+    height: 260px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+#footerLogin {
+    padding: 0px;
+    margin-top: 190px;
+    background-color: #ddd;
+    position: relative;
+    height: 264px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.newsLetter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.img-interna {
+    width: 20px !important;
+    height: 20px;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.password {
+    position: relative;
+}
+
+.d-none {
+    display: none;
+}
+
+/*Tela do Ao Vivo*/
+
+#blocoCompletoLive {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bloco-ao-vivo img {
+    width: 200px;
+}
+
+.bloco-ao-vivo {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    width: 60%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.programacaoAoVivo {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+    .blocoPrincipal {
+        width: 70%;
+    }
+    .blocoPrincipal input {
+        width: 90%;
+    }
+}

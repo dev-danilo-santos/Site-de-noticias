@@ -8,7 +8,7 @@ nav.addEventListener('mouseleave', saidaMouse);
 
 function entradaMouse(){
     nav.style.backgroundColor = "rgba(215, 30, 30)";
-    imgList.style.filter = "invert()";
+    // imgList.style.filter = "invert()";
     imgUser.style.filter = "invert()";
     inputSearch.style.backgroundColor = "white"
 
@@ -16,7 +16,7 @@ function entradaMouse(){
 
 function saidaMouse(){
     nav.style.backgroundColor = "rgba(215, 30, 30, 0.5)";
-    imgList.style.filter = "none";
+    // imgList.style.filter = "none";
     imgUser.style.filter = "none";
     inputSearch.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
 }

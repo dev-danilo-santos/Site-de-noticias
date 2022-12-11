@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="main.js"></script>
+    <script defer src="src/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login | GD News </title>
+</head>
+
+<body>
+    <div id="login">
+        <form id="form-login" action="/login.html">
+            <!--Lembrar de inserir aqui a página principal de notícias-->
+            <div class="blocoPrincipal">
+                <a href="index.html"><img src="img/GD News.png" alt="GD News Logotipo"></a>
+                <h1>Faça seu Login</h1>
+
+                <div class="email">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <div class="password">
+                    <input type="password" id="password" placeholder="Senha"><img id="olho-fechado" class="img-interna"
+                        width="20px" height="20px" src="/img/offEye.png" alt="Não pode ver a senha">
+                    <img src="img/onEye.png" id="olho-aberto" class="img-interna d-none" width="20px" height="20px"
+                        alt="Pode ver a senha">
+                </div>
+
+                <div class="submit">
+                    <p>Ainda não tem uma conta? <a href="cadastro.html"><strong>Cadastre-se agora</strong></a></p>
+                    <input type="submit" value="Acessar"><br><br>
+                    <p class="programacaoAoVivo">Assista à programação diária do <br><a href="live.html"><strong>GD News
+                                Ao Vivo</strong></a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer id="footerLogin">
+        <div class="blocoRodape">
+            <div class="linhaRodape">
+                <ul>
+                    <li><a href="Sobre o GD News"><strong>Sobre o GD News</strong></a></li>
+                    <li><a href="Termos de Uso da Plataforma"><strong>Termos de Uso da Plataforma</strong></a></li>
+                    <li><a href="Política de Privacidade"><strong>Política de Privacidade</strong></a></li>
+                    <li><a href="Fale Conosco"><strong>Fale Conosco</strong></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="newsLetter">
+            <p>Gostou do nosso formato de notícias? Se inscreva em nossa <a href="#"><strong> News
+                        Letter</strong></a></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
