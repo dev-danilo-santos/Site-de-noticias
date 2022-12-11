@@ -45,7 +45,7 @@ a {
     font-size: 16px;
 }
 
-.submit input {
+.submitt #btn-validar {
     width: 150px;
     height: 35px;
     border-radius: 25px;
@@ -77,7 +77,7 @@ input:focus {
     outline: none;
 }
 
-#form-login {
+#forms-login {
     display: flex;
     align-items: center;
     justify-content: center;

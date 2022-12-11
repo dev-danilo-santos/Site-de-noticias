@@ -35,7 +35,7 @@ body {
 }
 
 .logotipo {
-    margin: 20px;
+    margin: 25px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -110,11 +110,9 @@ body {
     margin: 0;
     padding: 10px;
     border-radius: 0px 0px 8px 8px;
-    position: sticky;
+    position: fixed;
     top:0;
     left:0;
-}
-#navbar {
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -122,6 +120,18 @@ body {
 #navbar * {
     overflow: visible;
 }
+#navbar button {
+    background-color: rgba(215, 30, 30, 0);
+    border: none;
+}
+
+.btn-nav:hover p{
+    color: rgb(0, 0, 0);
+}
+#user {
+    display: flex;
+}
+
 #clima {
     margin: 5px 3px 5px 3px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);

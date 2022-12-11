@@ -6,6 +6,41 @@ let inputSearch = document.getElementById('pesquisar')
 nav.addEventListener('mouseenter', entradaMouse);
 nav.addEventListener('mouseleave', saidaMouse);
 
+
+function verificarLogin(){
+    localStorage.setItem('logado',true)
+    window.location.href = "index.html";
+}
+
+function isLogado(){
+    if(localStorage.getItem('logado')){
+        let nav = document.getElementById('inserir-noticias')
+        let a = document.createElement('a')
+        let p = document.createElement('p')
+        a.href = 'userCMS.html'
+        let btn =  document.createElement('button')
+        btn.className = 'btn-nav'
+        btn.style.backgroundColor = 'rgba(215, 30, 30, 0)'
+        btn.style.border = 'none';
+        p.innerHTML = 'Inserir Notícias'
+        btn.appendChild(p)
+        a.appendChild(btn)
+        nav.appendChild(a)
+        
+        let navb = document.getElementById('logout')
+        let div = document.createElement('div')
+        div.innerHTML = `<button class="btn-nav" onclick="logout()" style="background-color: rgba(215, 30, 30, 0); border: none;"><p>Logout</p></button>`
+        navb.appendChild(div)
+
+    }
+}
+
+function logout(){
+    localStorage.clear();
+    location.reload()
+}
+
+
 function entradaMouse(){
     nav.style.backgroundColor = "rgba(215, 30, 30)";
     // imgList.style.filter = "invert()";

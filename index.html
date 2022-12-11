@@ -10,16 +10,25 @@
  
 </head>
 
-<body>
+<body onload="isLogado()">
     <div id="container-pai">
 
         <div id="navbar">
             <!-- <img id="img-lista" src="src/img/icons8-cardápio-50.png" alt="imagem lista"> -->
             <div class="separador">
+                <div id="inserir-noticias"></div>
                 <input type="text" name="Pesquisar" id="pesquisar" placeholder="Pesquisar notícia" onkeypress="buscar(event)">
-                <a href="login.html">
-                    <img id="img-user" src="src/img/user.png" alt="imagem usuário">
-                </a>
+                <div id="user">
+
+                    <a href="login.html">
+                        <img id="img-user" src="src/img/user.png" alt="imagem usuário">
+                    </a>
+
+                    <div id="logout">
+                        
+                    </div>
+
+                </div>
                 
             </div>
         </div>
