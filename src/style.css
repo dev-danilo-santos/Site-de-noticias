@@ -7,7 +7,7 @@ body * {
     text-decoration: none;
     overflow: hidden;
     text-align: justify;
-    font-family: Verdana, sans-serif;
+    font-family: 'Dosis', sans-serif;
     
 }
 a img {
@@ -124,6 +124,7 @@ body {
 #navbar button {
     background-color: rgba(215, 30, 30, 0);
     border: none;
+    cursor: pointer;
 }
 
 .btn-nav:hover p{
@@ -147,7 +148,6 @@ body {
     width: 25%;
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
-    color: black;
 }
 
 #img-lista ,#img-user {
@@ -342,7 +342,6 @@ body {
     .separador input {
         width: 111px;
         margin-left: 10px;
-        
     }
     #principais-noticias {
         flex-wrap: wrap;
